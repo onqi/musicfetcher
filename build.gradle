@@ -14,13 +14,16 @@ ext {
 
 dependencies {
     compile 'com.google.inject:guice:4.0'
-    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'com.google.inject.extensions:guice-servlet:4.0'
+
     compile 'org.glassfish.jersey.core:jersey-server:' + jerseyVer
     compile 'org.glassfish.jersey.core:jersey-common:' + jerseyVer
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:' + jerseyVer
     compile 'org.glassfish.jersey.containers:jersey-container-jetty-http:' + jerseyVer
     compile 'org.glassfish.jersey.core:jersey-client:' + jerseyVer
     compile 'org.glassfish.jersey.media:jersey-media-json-jackson:' + jerseyVer
+
+    compile 'org.slf4j:slf4j-api:1.7.13'
     runtime 'ch.qos.logback:logback-core:' + logbackVer
     runtime 'ch.qos.logback:logback-classic:' + logbackVer
 
